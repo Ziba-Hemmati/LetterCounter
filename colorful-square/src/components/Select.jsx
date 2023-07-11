@@ -1,24 +1,11 @@
-import { useState } from "react";
-import Box from "./Box";
-
-const data = [
-  { color: "red", text: "Red" },
-  { color: "blue", text: "Blue" },
-  { color: "green", text: "Green" },
-  { color: "yellow", text: "Yellow" },
-  { color: "purple", text: "Purple" },
-];
-
-const Select = () => {
-  const [value, setValue] = useState("");
-  const changHandler = (e) => {
-    setValue(e.target.value);
-  };
-
+const Select = ({ onChange, value, data }) => {
   return (
     <div>
-      <select onChange={changHandler} value={value}>
-        <option value="">Select a color</option>
+      <select
+        onChange={onChange}
+        value={value}
+        className="font-sans outline-none rounded-md border border-solid border-indigo-500 my-8 bg-purple-200 p-0.5"
+      >
         {data.map(({ color, text }) => {
           return (
             <option key={color} value={color}>
@@ -27,7 +14,6 @@ const Select = () => {
           );
         })}
       </select>
-      <Box color={value} />
     </div>
   );
 };

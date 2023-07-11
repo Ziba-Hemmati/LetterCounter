@@ -1,6 +1,9 @@
 const Box = ({ color }) => {
   return (
-    <div style={{ width: 100, height: 100, backgroundColor: color }}></div>
+    <div
+      className=" rounded-md"
+      style={{ width: 150, height: 150, backgroundColor: color }}
+    ></div>
   );
 };
 
