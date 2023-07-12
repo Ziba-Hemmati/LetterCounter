@@ -21,7 +21,7 @@ const Counter = () => {
         type="text"
         value={value}
         onChange={changeHandler}
-        className="outline-none rounded-md border border-solid border-indigo-500 my-8 bg-purple-200 p-2"
+        className="outline-none rounded-md border border-solid border-indigo-500 my-8 bg-purple-200 "
         ref={input}
       />
       <p className="rounded-md border border-solid border-indigo-500  bg-purple-200">
