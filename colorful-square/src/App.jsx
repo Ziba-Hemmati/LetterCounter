@@ -1,9 +1,9 @@
-import ColorApp from "./components/ColorApp";
+import Counter from "./components/Counter";
 
 function App() {
   return (
     <div className="bg-neutral-100 h-screen flex justify-center items-center ">
-      <ColorApp />
+      <Counter />
     </div>
   );
 }
